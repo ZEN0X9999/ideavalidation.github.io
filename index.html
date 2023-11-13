@@ -1,40 +1,23 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sign up</title>
-    <link rel="stylesheet" href="sign-up-styles.css">
-</head>
-<body>
-    <div class="main-content">
-        <div class="explanation-container">
-    <p class="text">Get Exclusive Early Access</p>
-    <p class="explanation-text">Join our early access program and be among the first to experience the future of chess coaching. Gain access to top-tier coaches, a vibrant chess community, and a hassle-free learning experience. Don't miss your chance to elevate your chess game.</p>
-</div>
+<html>
+    <head></head>
+    <body>
+        enable Javascript!
+        <script type="text/javascript">
+            const isMobile = window.innerWidth <= 768; // Adjust the width as needed
+            if (isMobile) {
+    fetch('index_mobile.html')
+        .then(response => response.text())
+        .then(html => {
+            document.documentElement.innerHTML = html;
+        });
+} else {
+    fetch('index_pc.html')
+        .then(response => response.text())
+        .then(html => {
+            document.documentElement.innerHTML = html;
+        });
+}
 
-        <hr style="height: 95%;">
-        <div class="sign-up-container">
-            <p class="text">Sign up for early access</p>
-            <form style="width: 80%; height: 100%; display: flex; flex-direction: column; align-items: center;" action="https://submit-form.com/hiEu3u4oM">
-                <label class="text2" for="name">Your Name</label>
-                <input class="input" type="text" id="name" name="name" placeholder="Name" required="" />
-                <label class="text2" for="email">Your Email</label>
-                <input class="input" type="email" id="email" name="email" placeholder="Email" required="" />
-                <label class="text2" for="message">Send us a Message</label>
-                <textarea
-                  class="message"
-                  id="message"
-                  name="message"
-                  placeholder="Message"
-                  required=""
-                ></textarea>
-                <div class="button-container" style="margin-top: 10%;">
-                    <button class="sign-up-button" type="submit"><p class="button-text">Send</p></button>
-                </div>
-              </form>
-            <p class="text3">We will contact you in the future</p>
-        </div>
-    </div>
-</body>
+        </script>
+    </body>
 </html>
