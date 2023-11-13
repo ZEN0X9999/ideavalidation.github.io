@@ -1,0 +1,74 @@
+.main-text-container {
+    width: 45%;
+    height: 80%;
+    margin-left: 7%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 2%;
+}
+.heading-container {
+    height: fit-content;
+    width: 100%;
+    margin-top: 5%;
+    margin-left: 3%;
+}
+.heading-1 {
+    font-family: 'Roboto', sans-serif;;
+    color: rgb(205,168,139);
+    font-size: 2.75431189225550rem;
+    font-weight: bold;
+    margin: 0;
+}
+.sign-up-button-body {
+    width: 30%;
+    height: 15%;
+    background-color: rgb(205,168,139);
+    margin-left: 3%;
+    border: none;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2%;
+    margin-top: 6%;
+    box-shadow: 5px 5px 15px 1px rgb(22, 22, 22);
+    transition: background-color 0.2s;
+}
+.sign-up-button-body:hover {
+    cursor: pointer;
+    background-color: rgb(168, 136, 111);
+
+}
+.illustration-container {
+    width: 45%;
+    height: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+}
+.illustration {
+    height: 90%;
+    width: 90%;
+}
+.divider {
+    width: 80%;
+    color: rgb(205,168,139);
+    margin-top: 5%;
+    margin-bottom:2%;
+}
+.explanation-container {
+    width: 100%;
+    height: fit-content;
+    margin-left: 3%;
+}
+.explanation-text {
+    font-family: 'Roboto', sans-serif;
+    color: rgb(210, 209, 209);
+    font-size: 1.2em;
+}
+.bullet-points{
+    font-size:1.6em;
+}
