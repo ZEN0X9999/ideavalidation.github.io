@@ -1,7 +1,7 @@
 console.log("WERE IN");
 
 function getMessage() {
-    return fetch('http://127.0.0.1:80/message/3')
+    return fetch('http://127.0.0.1/message/3')
         .then(response => {
             if (!response.ok) {
                 throw new Error('Network response was not ok');
